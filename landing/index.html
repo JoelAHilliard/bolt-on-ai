@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builtin | Custom AI for Phoenix Trade Businesses</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #111;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #aaa;
+            margin-bottom: 40px;
+        }
+
+        .benefits {
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 40px;
+        }
+
+        .benefits h2 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .benefits ul {
+            list-style: none;
+        }
+
+        .benefits li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #ccc;
+        }
+
+        .benefits li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4ade80;
+            font-weight: bold;
+        }
+
+        .form-section h2 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 6px;
+            background: #1a1a1a;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #4ade80;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            background: #4ade80;
+            color: #000;
+            border: none;
+            padding: 18px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #3cc970;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #555;
+            font-size: 0.85rem;
+        }
+
+        /* Large screens */
+        @media (min-width: 768px) {
+            .container {
+                padding: 60px 40px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.3rem;
+            }
+
+            .benefits {
+                padding: 30px;
+            }
+        }
+
+        /* Tablets */
+        @media (max-width: 767px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 30px;
+            }
+
+            .benefits {
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+        }
+
+        /* Small phones */
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 16px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+                margin-bottom: 16px;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+                margin-bottom: 25px;
+            }
+
+            .benefits {
+                padding: 18px;
+                margin-bottom: 25px;
+            }
+
+            .benefits h2 {
+                font-size: 1rem;
+            }
+
+            .benefits li {
+                font-size: 0.95rem;
+                padding: 6px 0;
+                padding-left: 22px;
+            }
+
+            .form-section h2 {
+                font-size: 1.1rem;
+            }
+
+            input, textarea {
+                padding: 14px;
+                font-size: 16px; /* Prevents iOS zoom */
+            }
+
+            button {
+                padding: 16px;
+                font-size: 1rem;
+            }
+
+            .footer {
+                margin-top: 35px;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Extra small phones */
+        @media (max-width: 360px) {
+            .container {
+                padding: 25px 12px;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            .subtitle {
+                font-size: 0.95rem;
+            }
+
+            .benefits li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>We build AI solutions that fix it.</h1>
+
+        <p class="subtitle">Custom AI solutions for Phoenix trade and industrial businesses. We build it. We train your team. It works.</p>
+
+        <div class="benefits">
+            <h2>We handle the stuff that's costing you time and money:</h2>
+            <ul>
+                <li>Scheduling and dispatch</li>
+                <li>Invoicing and follow-ups</li>
+                <li>Customer callbacks that slip through the cracks</li>
+                <li>Training new guys</li>
+                <li>Parts ordering and inventory</li>
+                <li>Whatever else is slowing you down</li>
+            </ul>
+        </div>
+
+        <div class="form-section">
+            <h2>Book a Free Walkthrough</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Smith">
+                </div>
+
+                <div>
+                    <label for="business">Type of Business</label>
+                    <input type="text" id="business" name="business" required placeholder="Auto shop, HVAC, plumbing, etc.">
+                </div>
+
+                <div>
+                    <label for="headache">What's Your Biggest Headache Right Now?</label>
+                    <textarea id="headache" name="headache" required placeholder="What's eating your time or costing you money?"></textarea>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="(602) 555-1234">
+                </div>
+
+                <button type="submit">Book My Free Walkthrough</button>
+            </form>
+        </div>
+
+        <p class="footer">Phoenix metro area only. We'll reach out within 24 hours.</p>
+    </div>
+</body>
+</html>
